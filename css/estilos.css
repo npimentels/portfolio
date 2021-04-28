@@ -1,0 +1,29 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img{
+    border-radius: 25px;
+    height: 200px;
+    width: 90%;
+}
+
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+div ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: .5s ease-out;
+}
+
+div ul li a:hover::after{
+    width: 100%;
+}
+
